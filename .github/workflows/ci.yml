@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          GRIDSOME_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
